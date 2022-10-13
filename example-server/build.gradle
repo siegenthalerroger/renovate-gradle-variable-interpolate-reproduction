@@ -23,12 +23,14 @@ repositories {
     maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
     maven { url "https://repo.spring.io/snapshot" }
     maven { url "https://repo.spring.io/milestone" }
-    maven { url  "https://maven.repository.redhat.com/ga/" }
+    maven { url "https://maven.repository.redhat.com/ga/" }
 }
 
 dependencies {
     implementation project(':example-api')
 
+    implementation("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.apache.commons:commons-lang3:${apacheCommonsLangVersion}")
     implementation("org.springdoc:springdoc-openapi-ui:${openApiVersion}")
 }
