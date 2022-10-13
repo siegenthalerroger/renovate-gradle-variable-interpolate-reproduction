@@ -17,10 +17,10 @@ subprojects {
 
     ext {
         springBootVersion = '2.7.1'
-        openApiVersion = '1.5.13'
         apacheVersion = '3.12.0'
         redhatVersion = '00001'
         apacheCommonsLangVersion = "${apacheVersion}.redhat-${redhatVersion}"
+        openApiVersion = '1.5.13'
     }
 
     tasks.withType(JavaCompile) {
