@@ -17,7 +17,7 @@ subprojects {
 
     ext {
         springBootVersion = '2.7.1'
-        openApiVersion = '1.5.13'
+        openApiVersion = '1.6.11'
         apacheVersion = '3.12.0'
         redhatVersion = '00001'
         apacheCommonsLangVersion = "${apacheVersion}.redhat-${redhatVersion}"
