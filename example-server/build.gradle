@@ -29,8 +29,8 @@ repositories {
 dependencies {
     implementation project(':example-api')
 
-    implementation("org.springdoc:springdoc-openapi-ui:${openApiVersion}")
     implementation("org.apache.commons:commons-lang3:${apacheCommonsLangVersion}")
+    implementation("org.springdoc:springdoc-openapi-ui:${openApiVersion}")
 }
 
 // further task definitions
