@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+allprojects {
+    version = '0.0.1'
+    group = 'com.elderbyte.example'
+
+    ext {
+        baseHref = '/example/'
+    }
+}
+
+subprojects {
+
+    ext {
+        springBootVersion = '2.7.1'
+        openApiVersion = '1.5.13'
+        apacheVersion = '3.12.0'
+        redhatVersion = '00001'
+        apacheCommonsLangVersion = "${apacheVersion}.redhat-${redhatVersion}"
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+        sourceCompatibility = 17
+        targetCompatibility = 17
+    }
+
+    // further task definitions
+
+}
+
+// further task definitions

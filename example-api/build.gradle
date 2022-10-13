@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api("com.fasterxml.jackson.core:jackson-databind:2.9.5")
+    api("javax.validation:validation-api:2.0.1.Final")
+}
+
+// task definitions

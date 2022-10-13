@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+
+        // yaml
+        classpath group: 'org.yaml', name: 'snakeyaml', version: '1.26'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url  "https://maven.repository.redhat.com/ga/" }
+}
+
+dependencies {
+    implementation project(':example-api')
+
+    implementation("org.springdoc:springdoc-openapi-ui:${openApiVersion}")
+    implementation("org.apache.commons:commons-lang3:${apacheCommonsLangVersion}")
+}
+
+// further task definitions
