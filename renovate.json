@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "dependencyDashboard": true,
+  "internalChecksFilter": "strict",
+  "packageRules": [
+      {
+          "matchDatasources": [
+              "maven"
+          ],
+          "registryUrls": [
+              "https://repo.maven.apache.org/maven2/",
+              "https://repo.spring.io/snapshot",
+              "https://repo.spring.io/milestone",
+              "https://maven.repository.redhat.com/ga/"
+          ]
+      }
+  ],
+
+  "extends": [
+    "config:base"
+  ]
+}
