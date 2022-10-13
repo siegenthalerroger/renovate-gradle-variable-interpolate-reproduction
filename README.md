@@ -1,0 +1,1 @@
+# renovate-gradle-variable-interpolate-reproduction
