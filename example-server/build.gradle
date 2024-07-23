@@ -8,7 +8,7 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 
         // yaml
-        classpath group: 'org.yaml', name: 'snakeyaml', version: '1.26'
+        classpath group: 'org.yaml', name: 'snakeyaml', version: '2.2.0.redhat-00001'
     }
 }
 
