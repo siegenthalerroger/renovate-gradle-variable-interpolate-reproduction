@@ -21,7 +21,7 @@ subprojects {
         apacheCompatibility = 'redhat'
         redhatVersion = '00001'
         apacheCommonsLangVersion = "${apacheVersion}.${apacheCompatibility}-${redhatVersion}"
-        openApiVersion = '1.5.13'
+        openApiVersion = '1.8.0'
     }
 
     tasks.withType(JavaCompile) {
